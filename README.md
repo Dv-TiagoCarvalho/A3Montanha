@@ -63,10 +63,8 @@ https://github.com/ViniciusEDcampos?tab=repositories
 
 ### Tiago Gesualdo de Cavalho
 - Github:
-  https://github.com/ViniciusEDcampos?tab=repositories
-
+  https://github.com/Dv-TiagoCarvalho
 
 ### Pablo Ferreira Rodrigues
 - Github:
-  https://github.com/ViniciusEDcampos?tab=repositories
-
+  https://github.com/Pablaum
