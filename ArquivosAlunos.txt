@@ -1,2 +1,1 @@
-Aluno: nome='a', matricula='a', cpf='a', endereço='a', cidade='a', cep='a', telefone='a', rg='a', email='a', dataNascimento='09/09/2006', sexo='a', planoAcademia='a'
-Aluno: nome='a', matricula='a', cpf='a', endereço='a', cidade='a', cep='a', telefone='a', rg='a', email='a', dataNascimento='09/09/2006', sexo='a', planoAcademia='a'
+Pedro,matricula1,l,l,l,l,l,l,l,l,l,l

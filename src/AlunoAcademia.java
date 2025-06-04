@@ -1,5 +1,3 @@
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 public class AlunoAcademia {
 
@@ -12,9 +10,7 @@ public class AlunoAcademia {
     private String telefone;
     private String rg;
     private String email;
-
-    private LocalDate dataNascimento;
-
+    private String dataNascimento;
     private String sexo;
     private String planoAcademia;
 
@@ -87,11 +83,11 @@ public class AlunoAcademia {
         this.email = email;
     }
 
-    public LocalDate getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -119,31 +115,11 @@ public class AlunoAcademia {
         this.cpf = cpf;
     }
 
-    //metodo 'toString' criado para imprimir a classe AlunoAcademia no Main em forma de texto
-
+    @Override
     public String toString() {
-        return "Aluno: " +
-                "nome='" + nome + '\'' +
-                ", matricula='" + matricula + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", endereço='" + endereco + '\'' +
-                ", cidade='" + cidade + '\'' +
-                ", cep='" + cep + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", rg='" + rg + '\'' +
-                ", email='" + email + '\'' +
-                ", dataNascimento='" + getDataNascimentoFormatada() + '\'' +
-                ", sexo='" + sexo + '\'' +
-                ", planoAcademia='" + planoAcademia + '\'';
-    }
-
-    // Metodo para formatar a data de nascimento do aluno
-    public String getDataNascimentoFormatada() {
-        if (dataNascimento == null) {
-            return "não informado";
-        }
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        return dataNascimento.format(formatter);
+        return nome + "," + matricula + "," + cpf + "," + endereco + "," + cidade + "," +
+                cep + "," + telefone + "," + rg + "," + email + "," +
+                dataNascimento + "," + sexo + "," + planoAcademia;
     }
 
 }
