@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println("----- Academia TechFit -----");
         while (continuar) {
-            System.out.println("\nEscolha a opção que deseja usar: ");
+            System.out.println("Escolha a opção que deseja usar: ");
             System.out.println(" 1 - Criar novo registro"
                     + "\n 2 - Listar todos os Registros"
                     + "\n 3 - Buscar registro por matrícula"

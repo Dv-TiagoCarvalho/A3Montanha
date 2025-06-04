@@ -171,19 +171,7 @@ public class SistemaAcademia {
                 String[] dados = linha.split(",");
                 if (dados.length < 12) continue;
 
-                AlunoAcademia aluno = new AlunoAcademia();
-                aluno.setNome(dados[0]);
-                aluno.setMatricula(dados[1]);
-                aluno.setCpf(dados[2]);
-                aluno.setEndereco(dados[3]);
-                aluno.setCidade(dados[4]);
-                aluno.setCep(dados[5]);
-                aluno.setTelefone(dados[6]);
-                aluno.setRg(dados[7]);
-                aluno.setEmail(dados[8]);
-                aluno.setDataNascimento(dados[9]);
-                aluno.setSexo(dados[10]);
-                aluno.setPlanoAcademia(dados[11]);
+                AlunoAcademia aluno = getAlunoAcademia(dados);
 
                 lista.add(aluno);
             }
@@ -192,6 +180,23 @@ public class SistemaAcademia {
         }
 
         return lista;
+    }
+
+    private static AlunoAcademia getAlunoAcademia(String[] dados) {
+        AlunoAcademia aluno = new AlunoAcademia();
+        aluno.setNome(dados[0]);
+        aluno.setMatricula(dados[1]);
+        aluno.setCpf(dados[2]);
+        aluno.setEndereco(dados[3]);
+        aluno.setCidade(dados[4]);
+        aluno.setCep(dados[5]);
+        aluno.setTelefone(dados[6]);
+        aluno.setRg(dados[7]);
+        aluno.setEmail(dados[8]);
+        aluno.setDataNascimento(dados[9]);
+        aluno.setSexo(dados[10]);
+        aluno.setPlanoAcademia(dados[11]);
+        return aluno;
     }
 
     public static boolean executarOpcao(int opcao, ArrayList<AlunoAcademia> lista, String caminhoArquivo, Scanner scanner) {
