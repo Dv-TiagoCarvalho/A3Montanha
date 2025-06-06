@@ -135,15 +135,18 @@ public class SistemaAcademia {
         boolean removido = false;
         while (iterator.hasNext()) {
             if (iterator.next().getMatricula().equalsIgnoreCase(matriculaExcluir)) {
-                iterator.remove();
-                removido = true;
+                System.out.println("Você tem certeza que deseja excluir essa matricula? (S/N)");
+                if (scanner.nextLine().toLowerCase().equalsIgnoreCase("S")) {
+                    iterator.remove();
+                    removido = true;
+                }
                 break;
             }
         }
         if (removido) {
             System.out.println("Aluno removido.");
         } else {
-            System.out.println("Aluno não encontrado.");
+            System.out.println("Aluno não removido do sistema, ou encontrado.");
         }
     }
 
