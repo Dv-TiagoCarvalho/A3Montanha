@@ -1,0 +1,57 @@
+## 📄 Entidade: AlunoAcademia
+
+A entidade AlunoAcademia representa os alunos cadastrados em uma academia, com todos os dados relevantes para identificação pessoal, contato e plano de treino.
+Ela é uma classe de modelo, cuja função é armazenar e estruturar os dados dos alunos de forma organizada e reutilizável, permitindo que outras partes do sistema
+(como o SistemaAcademia) possam manipular essas informações de forma segura e eficiente.
+
+---
+A criação da entidade AlunoAcademia é justificada pela necessidade de:
+
+Modelar os dados dos alunos de forma clara e objetiva.
+Permitir o uso de encapsulamento com métodos get e set para proteger o acesso direto aos atributos.
+Facilitar a persistência dos dados em arquivos (ex: CSV), onde cada aluno representa uma linha do registro.
+Servir como base para operações do sistema, como:
+Cadastro de novos alunos
+Busca por matrícula
+Edição de informações
+Exclusão de registros
+Listagem geral
+
+---
+
+Atributos
+A classe contém os seguintes atributos:
+
+| Atributo       | Tipo     | Descrição                           |
+|----------------|----------|-------------------------------------|
+| nome           | String   | Nome completo do aluno              |
+| matricula      | String   | Código único de identificação       |
+| endereco       | String   | Endereço residencial                |
+| cidade         | String   | Cidade de residência                |
+| cpf            | String   | Cadastro de Pessoa Física           |
+| cep            | String   | Código de Endereçamento Postal      |
+| telefone       | String   | Telefone para contato               |
+| rg             | String   | Registro Geral                      |
+| email          | String   | E-mail de contato                   |
+| dataNascimento | String   | Data de nascimento do aluno         |
+| sexo           | String   | Sexo do aluno                       |
+| planoAcademia  | String   | Plano contratado na academia        |
+
+---
+Métodos principais
+A classe fornece métodos do tipo:
+
+Construtor vazio: permite instanciar a classe sem parâmetros.
+Getters e Setters: acesso e modificação de cada campo.
+toString(): formata os dados do aluno como uma linha de texto, facilitando a exportação para arquivos .txt ou .csv.
+
+---
+
+Relação com outras classes
+A entidade AlunoAcademia é utilizada diretamente pela classe SistemaAcademia, que realiza operações CRUD (Create, Read, Update, Delete) com base em objetos dessa entidade.
+
+---
+
+✅ Conclusão
+A classe AlunoAcademia é essencial para a modelagem do sistema, pois representa o núcleo de dados da aplicação. 
+Sem ela, o sistema não teria como organizar ou persistir as informações dos alunos de forma eficiente.
