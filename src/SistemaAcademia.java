@@ -53,20 +53,17 @@ public class SistemaAcademia {
     public static void editarAluno(ArrayList<AlunoAcademia> lista, Scanner scanner) {
 
             System.out.println("----- Editar registro -----");
+            System.out.print("Informe a matrícula do aluno que deseja editar: ");
             String editarMatricula = scanner.nextLine();
             boolean encontrado = false;
                 for (AlunoAcademia aluno : lista) {
-                    System.out.print("Informe a matrícula do aluno que deseja editar: ");
                     if (aluno.getMatricula().equalsIgnoreCase(editarMatricula)) {
-
+                        encontrado = true;
                         System.out.println("Registro atual:");
                         System.out.println(aluno);
-
-                        System.out.println("\n Qual campo deseja editar?");
-
-
-                        System.out.println("Opções: nome, matricula, endereco, cidade, cpf, cep, telefone, rg, email, dataNascimento" +
-                                 "sexo, planoAcademia");
+                        System.out.println("\nQual campo deseja editar?");
+                        System.out.println("Opções: nome, matricula, endereco, cidade, cpf, cep, telefone," +
+                                " rg, email, dataNascimento sexo, planoAcademia");
                         String campo = scanner.nextLine().toLowerCase();
 
                         switch (campo) {
@@ -75,7 +72,7 @@ public class SistemaAcademia {
                                 System.out.println("Registro editado com sucesso!");
                                 break;
                             case "matricula":
-                                aluno.setMatricula(lerEntradaValida(scanner,"Nova matrícula: "));
+                                aluno.setMatricula(lerEntradaValida(scanner, "Nova matrícula: "));
                                 System.out.println("Registro editado com sucesso!");
                                 break;
                             case "endereco":
@@ -106,7 +103,7 @@ public class SistemaAcademia {
                                 aluno.setEmail(lerEntradaValida(scanner, "Novo email: "));
                                 System.out.println("Registro editado com sucesso!");
                                 break;
-                            case  "datanascimento":
+                            case "datanascimento":
                                 aluno.setDataNascimento(lerEntradaValida(scanner, "Novo Data de Nascimento: "));
                                 System.out.println("Registro editado com sucesso!");
                                 break;
@@ -124,10 +121,8 @@ public class SistemaAcademia {
                         }
                         break;
                     }
-                }
-                if (!encontrado) {
+                }if(!encontrado) {
                     System.out.println("Aluno com a matrícula " + editarMatricula + " não encontrado.");
-
                 }
     }
 
