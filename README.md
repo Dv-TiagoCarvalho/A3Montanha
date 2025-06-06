@@ -30,22 +30,22 @@ O sistema é composto por:
 
 ---
 
-## ▶️ Como compilar e executar
+## ▶️ Como compilar e executa
 
-###  1. Compile os arquivos
+- Pré-requisitos
+- Java JDK instalado (versão 8 ou superior)
 
-Abra o terminal na pasta onde estão os arquivos `.java` e execute:
+- Terminal ou Prompt de Comando
 
-```bash
-javac Main.java SistemaAcademia.java AlunoAcademia.java
-```
+Os arquivos .java do projeto: 
+- Main.java 
 
-###  2. Execute o programa
-Após a compilação, execute com:
+- SistemaAcademia.java
 
-```bash
-java Main
-```
+- AlunoAcademia.java
+
+Um arquivo para armazenar os dados dos alunos (ex: ArquivosAlunos.txt)
+
 ## 💡 Funcionalidades
 
 - ✅ Cadastro de alunos
