@@ -2,9 +2,15 @@
 
 Este é um sistema em Java para o **cadastro e gerenciamento de alunos** de uma academia. Ele permite realizar operações básicas de CRUD (Criar, Ler, Atualizar, Excluir) com persistência de dados em um arquivo `.txt` (ou `.csv`).
 
+## Justificativa de Escolha do Tema
+Escolhemos desenvolver um sistema para academias porque o grupo já possui familiaridade
+com esse ambiente e com sistemas computacionais. Isso facilitou o entendimento das 
+necessidades do projeto e permitiu aplicar melhor os conhecimentos em programação
+orientada a objetos, manipulação de arquivos e lógica de sistemas reais.
+
+
 # Trabalho Final A3 
 ## Disciplina: Programação de Soluções Computacionais
-
 
 ## 📁 Estrutura do Projeto
 
